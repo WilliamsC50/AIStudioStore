@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Studio Kit Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">StudioStore</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#custom-kits">Build Your Kit</a></li>
+        <li><a href="#prebuilt-kits">Prebuilt Kits</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="custom-kits" class="card">
+      <h2>Build Your Custom Studio Kit</h2>
+      <form id="studioForm">
+        <div class="form-group">
+          <label for="mic">Microphone</label>
+          <select id="mic"></select>
+          <input type="number" id="micQty" min="1" max="99" value="1" />
+        </div>
+        <div class="form-group">
+          <label for="interface">Audio Interface</label>
+          <select id="interface"></select>
+          <input type="number" id="interfaceQty" min="1" max="99" value="1" />
+        </div>
+        <div class="form-group">
+          <label for="headphones">Headphones</label>
+          <select id="headphones"></select>
+          <input type="number" id="headphonesQty" min="1" max="99" value="1" />
+        </div>
+        <div class="form-group">
+          <label for="monitors">Studio Monitors</label>
+          <select id="monitors"></select>
+          <input type="number" id="monitorsQty" min="1" max="99" value="1" />
+        </div>
+        <div class="form-group">
+          <label for="console">Mixing Console</label>
+          <select id="console"></select>
+          <input type="number" id="consoleQty" min="1" max="99" value="1" />
+        </div>
+        <button type="button" onclick="buildKit()">Add to Kit</button>
+      </form>
+
+      <div id="kitOutput" class="output"></div>
+    </section>
+
+    <section id="prebuilt-kits" class="card">
+      <h2>Prebuilt Kits</h2>
+
+      <div class="kit-card">
+        <h3>Starter Podcasting Kit – $899</h3>
+        <ul>
+          <li>Shure SM58 Microphone</li>
+          <li>Focusrite Scarlett Solo</li>
+          <li>Audio-Technica ATH-M30x</li>
+          <li>Yamaha HS5 Monitors</li>
+        </ul>
+      </div>
+
+      <div class="kit-card">
+        <h3>Beat Producer Kit – $1499</h3>
+        <ul>
+          <li>AKG C214 Microphone</li>
+          <li>Universal Audio Volt 2</li>
+          <li>Sony MDR-7506</li>
+          <li>KRK Rokit 7 Monitors</li>
+          <li>Akai MPC Studio</li>
+        </ul>
+      </div>
+
+      <div class="kit-card">
+        <h3>Band Recording Kit – $3499</h3>
+        <ul>
+          <li>Shure SM7B (x2)</li>
+          <li>PreSonus StudioLive AR12c</li>
+          <li>Beyerdynamic DT 770 PRO (x3)</li>
+          <li>JBL 308P MkII Monitors</li>
+          <li>Complete Mic Set + DI Boxes</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 StudioStore. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

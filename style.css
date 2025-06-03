@@ -1,0 +1,155 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+  color: #111;
+}
+
+/* Header */
+.header {
+  background-color: #232f3e;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Container */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Card Style */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Section Headers */
+.card h2 {
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+/* Form Layout */
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+label {
+  width: 180px;
+  font-weight: 600;
+}
+
+select, input[type="number"] {
+  padding: 0.4rem;
+  font-size: 1rem;
+}
+
+select {
+  flex-grow: 1;
+  min-width: 220px;
+}
+
+input[type="number"] {
+  width: 70px;
+}
+
+/* Button */
+button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #ffa41c;
+  color: #111;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #f08804;
+}
+
+/* Output Box */
+.output {
+  margin-top: 1.5rem;
+  background-color: #eef1f5;
+  padding: 1rem;
+  border-left: 4px solid #ffa41c;
+  border-radius: 4px;
+  color: #111;
+}
+
+.output ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+/* Prebuilt Kits */
+.kit-card {
+  background-color: #fafafa;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.kit-card h3 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.kit-card ul {
+  padding-left: 1.25rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #232f3e;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
